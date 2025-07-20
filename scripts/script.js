@@ -1,5 +1,9 @@
 // Event listener for dom content loaded
 document.addEventListener("DOMContentLoaded", async () => {
+    const listElement = document.querySelector('#list_of_songs');
+    
+    listElement.innerHTML = '<li>Loading songs...</li>';
+
     const response = await fetch(songsApiURL);
 
     const songs = await response.json();
@@ -18,5 +22,5 @@ document.addEventListener("DOMContentLoaded", async () => {
         `;
     }
 
-    document.querySelector('#list_of_songs').innerHTML = html;
+    listElement.innerHTML = html;
 });
