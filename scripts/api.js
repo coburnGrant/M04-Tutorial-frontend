@@ -1,4 +1,5 @@
-const apiUrl = 'https://m04-tutorial-backend.onrender.com/'; //'http://localhost:3000/api/'
+const hostURL = 'https://m04-tutorial-backend.onrender.com'; // 'http://localhost:3000';
+const apiUrl = `${hostURL}/api/`;
 const songsApiURL = `${apiUrl}songs/`;
 
 async function fetchSongWithId(songId) {
