@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     
     listElement.innerHTML = '<li>Loading songs...</li>';
 
-    const response = await fetch(songsApiURL);
+    const songs = await getAllSongs();
 
-    const songs = await response.json();
-
-    console.log(songs);
+    if(!songs) {
+        return; // Failed to get songs
+    }
 
     let html = ''
 

@@ -18,7 +18,7 @@ async function addNewSong() {
     const result = await addSong(song);
 
     if(result) {
-        alert(`Added song with ID of: '${result.id}'`);
+        alert(`Added song with ID of: '${result._id}'`);
 
         document.querySelector("form").reset();
     } else {
