@@ -1,4 +1,4 @@
-const hostURL = 'http://localhost:3000'; // 'https://m04-tutorial-backend.onrender.com';
+const hostURL = 'https://m04-tutorial-backend.onrender.com'; // 'http://localhost:3000';
 const apiUrl = `${hostURL}/api/`;
 const songsApiURL = `${apiUrl}songs/`;
 
