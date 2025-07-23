@@ -8,7 +8,7 @@ async function getAllSongs() {
     if (response.ok) {
         return await response.json();
     } else {
-        console.error('encountered error getting all songs', e)
+        console.error('encountered error getting all songs');
         return null;
     }
 }

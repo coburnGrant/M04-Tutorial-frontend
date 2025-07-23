@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const songs = await getAllSongs();
 
     if(!songs) {
+        listElement.innerHTML = "Failed to get songs";
         return; // Failed to get songs
     }
 
